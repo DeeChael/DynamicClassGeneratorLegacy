@@ -1,6 +1,8 @@
 # Dynamic Class Generator
 ## Generate classes when a program is running!
 
+# !!! This project has been moved to Ocean-Project repo! !!!
+
 ### Example:
     JClass clazz = new JClass("net.deechael.test", "DynamicClassGeneratorTest", Level.PUBLIC);
     //Create field
