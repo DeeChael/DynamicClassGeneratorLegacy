@@ -1,9 +1,9 @@
 # Dynamic Class Generator
 ## Generate classes when a program is running!
 
-# !!! This project has been moved to Ocean-Project repo! !!!
-
-### Example:
+# !!! This project has been moved to [this](https://github.com/DeeChael/DynamicClassGenerator) repo! !!!
+ Example:
+ ```java
     JClass clazz = new JClass("net.deechael.test", "DynamicClassGeneratorTest", Level.PUBLIC);
     //Create field
     JField field = clazz.addField(Level.PUBLIC, String.class, "parent", false, false);
@@ -44,8 +44,10 @@
     Object instance = cons.newInstance("Test message!", new Human());
     generated.getMethod("testing", Human.class).invoke(instance, new Human());
 
-####Generated code:
-    package net.deechael.test;
+```
+Generated code:
+```java
+   package net.deechael.test;
 
     import java.lang.String;
     import net.deechael.library.dcg.test.Human;
@@ -85,6 +87,7 @@
         }
     
     }
+```
 
 ###Coming Soon:
 1.<s>Extending class</s>\
